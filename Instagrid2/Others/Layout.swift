@@ -8,7 +8,7 @@
 
 import Foundation
 
-// association of the number of photos according of the layouts
+// association of the number of photos according to the layouts
 struct Layout {
     enum LayoutGuideline {
         case layout(Int)

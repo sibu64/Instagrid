@@ -86,7 +86,7 @@ class ViewController: UIViewController {
         //Setting up of the selected image on buttons
         sender.isSelected = true
         
-        // Structuring of the layouts by handling visiblity of the containers
+        // Structuring of the layouts by handling visibility of the containers
         switch sender {
         case layout1:
             topLeftContainer?.isHidden = true

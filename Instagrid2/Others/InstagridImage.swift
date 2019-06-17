@@ -17,7 +17,7 @@ class InstagridImage {
     //Delegator
     var delegate: InstagridImageDelegate?
     
-    // Definition of the function + sucess alert
+    // Definition of the share function + sucess alert
     func share(with image: UIImage, controller: UIViewController) {
         let activity = UIActivityViewController(activityItems: [image], applicationActivities: nil)
         

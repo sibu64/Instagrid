@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         self.changeSwipeGestureDirection()
     }
-    // Handling of the device's orientation  to swipe left and up
+    // Handling of the device's orientation to swipe left and up
     private func changeSwipeGestureDirection() {
         if UIDevice.current.orientation.isLandscape {
             swipeGesture.direction = .left
@@ -163,7 +163,7 @@ class ViewController: UIViewController {
             }
             return
         }
-        self.presentAlert(message: "You must share more photos")
+        self.presentAlert(message: "⚠️ You must share more photos!")
     }
 }
 
@@ -185,6 +185,6 @@ extension ViewController: ImagePickerDelegate {
   // Delegate
 extension ViewController: InstagridImageDelegate {
     func didSharedSuccess() {
-        self.presentAlert(title: "Félicitation", message: "Votre photo à été partagé avec succès !")
+        self.presentAlert(title: "Congratulations", message: "Your photos have been shared with success! 👍")
     }
 }
